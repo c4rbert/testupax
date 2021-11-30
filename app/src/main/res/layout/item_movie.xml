@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/movie_container"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/normal_margin"
+        android:background="@color/black"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/data_container_ll"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/data_container_ll"
+        app:layout_constraintTop_toTopOf="@id/data_container_ll">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/movie_i_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/harry" />
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/data_container_ll"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/movie_container"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/movie_title"
+            style="@style/TitleBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Harry Potter"
+            android:textSize="@dimen/text_size_normal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/movie_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pelicula" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

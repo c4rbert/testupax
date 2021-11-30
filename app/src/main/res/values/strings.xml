@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Test Project</string>
+    <string name="movie_name">Nombre de pelicula</string>
+    <string name="password">Contraseña</string>
+    <string name="search_text">Buscar</string>
+    <string name="movies_title">Movies Searcher</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="maps">Maps</string>
+    <string name="pictures">Fotos</string>
+    <string name="open_camera">Abrir camara</string>
+    <string name="max_pictures">Número máximo de fotos (10)</string>
+    <string name="with_out_connection">Sin conexión a internet</string>
+    <string name="last_search">Se muestra la última busqueda</string>
+    <string name="movie_not_found">No se encontraron coincidencias</string>
+</resources>
